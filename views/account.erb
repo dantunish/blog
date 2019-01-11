@@ -1,0 +1,15 @@
+<a href="./signout">SignOut</a>
+<p> This is your page lol</p>
+<form method="POST" action="/blogpost">
+    <input required type="text" name="title">
+    <textarea required type="text" name="post"></textarea>
+    <button type="submit">Make a post</button>
+</form>
+
+<h2> Recent Posts </h2>
+<% @Blogs_all.each do |bol| %>
+    <div>
+        <p> Title: <%= bol.title %> </p>
+        <p> Post: <%= bol.post %> </p>
+    </div>
+<% end %>

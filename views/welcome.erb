@@ -1,0 +1,7 @@
+<h2> Recent Posts </h2>
+<% @Blogs_all.each do |bol| %>
+    <div>
+        <p> Title: <%= bol.title %> </p>
+        <p> Post: <%= bol.post %> </p>
+    </div>
+<% end %>
